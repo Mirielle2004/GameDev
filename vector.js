@@ -60,4 +60,12 @@ class Vector {
     addScale(vec, scalar) {
         return new Vector(this.x + vec.x * scalar, this.y + vec.y * scalar);
     }
+
+    static fromArray(arr) {
+        return new Vector(arr[0], arr[1]);
+    }
+ 
+    static fromObject(obj) {
+        return new Vector(obj.x, obj.y);
+    }
 }
